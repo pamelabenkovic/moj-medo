@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Moj Medo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/customize.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                	<img src="slike/logo.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Početna</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Izrada plišanaca</a>
+                    </li>
+					<li>
+                        <a href="QRAplikacija.html">QR Aplikacija</a>
+                    </li>
+                    <li>
+                        <a href="financije.html">Cjenik</a>
+                    </li>
+                    <li>
+                        <a href="zajednica.html">Zajednica</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Košarica</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <p id="prazno">A<br>A<br>A<br>A<br>A</p>
+        <h1 style="text-align: center;">Kreairaj svog medvjedića</h1>
+         <div class="container" id="sve">
+             <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+            
+    
+                <div class="col-sm-8">
+                    <div class="druganav">
+                        <ul>
+                            <li><a href="#home">Boja</a></li>
+                            <li><a href="#news">Majica</a></li>
+                            <li><a href="#contact">Hlače</a></li>
+                            <li><a href="#">Kosa</a></li>
+                            <li><a href="#about">Kapa</a></li>
+                            <li><a href="#">Predmet</a></li>
+                            <li><a href="#">Logo</a></li>
+                          </ul>
+                    </div>
+                   
+                </div>
+
+             </div>
+
+             <div class="row">
+                 <div class="col-sm-4" id="custommedo">
+                    <img src="slike/obican.jpg" alt="obican" id="obicanmedo">
+
+                    <label onclick="changeImageReset()" class="animated-button1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Reset
+                    </label>
+                    <label onclick="changeImageRandom()" class="animated-button1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Random
+                    </label>
+                 </div>
+                 <div class="col-sm-8">
+                    <table style="width:100%" id="tablicaboja">
+                        <tr>
+                          <td onclick="changeImage1()"><img src="boje/bijela.jpg" alt="bijela" id="change1"><br>Bijela<br>4% ljudi ima ovu boju</td>
+                          <td onclick="changeImage2()"><img src="boje/crvena.jpg" alt="crvena" id="change2"><br>Crvena<br>4% ljudi ima ovu boju</td>
+                          <td onclick="changeImage3()"><img src="boje/svjetloplava.jpg" alt="svjetloplava" id="change3"><br>Svjetlo plava<br>19% ljudi ima ovu boju</td>
+                          <td onclick="changeImage4()"><img src="boje/tirkizna.jpg" alt="tirkizna" id="change4"><br>Tirkizna<br>3% ljudi ima ovu boju</td>
+                        </tr>
+                        <tr>
+                            <td onclick="changeImage5()"><img src="boje/ljubicasta.jpg" alt="ljubicasta" id="change5"><br>Ljubicasta<br>11% ljudi ima ovu boju</td>
+                            <td onclick="changeImage6()"><img src="boje/svjetloroza.jpg" alt="svjetloroza" id="change6"><br>Svjetlo roza<br>17% ljudi ima ovu boju</td>
+                            <td onclick="changeImage7()"><img src="boje/roza.jpg" alt="roza" id="change7"><br>Roza<br>13% ljudi ima ovu boju</td>
+                            <td onclick="changeImage8()"><img src="boje/sarena.png" alt="sarena" id="change8"><br>Šarena<br>1% ljudi ima ovu boju</td>
+                        </tr>
+                        <tr>
+                            <td onclick="changeImage9()"><img src="boje/tamnoroza.jpg" alt="tamnoroza" id="change9"><br>Tamnoroza<br>10% ljudi ima ovu boju</td>
+                            <td onclick="changeImage10()"><img src="boje/zuta.png" alt="zuta" id="change10"><br>Žuta<br>5% ljudi ima ovu boju</td>
+                            <td onclick="changeImage11()"><img src="boje/mint.png" alt="mint" id="change11"><br>Mint<br>2% ljudi ima ovu boju</td>
+                            <td onclick="changeImage12()"><img src="boje/lavanda.png" alt="lavanda" id="change12"><br>Lavanda<br>11% ljudi ima ovu boju</td>
+                          </tr>
+                      </table>
+                 </div>
+             </div> 
+
+        </div>
+
+        <p id="demo"></p>
+
+	<footer>
+		<div class="footer-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-info-item">
+						<h3>Informacije</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">O nama</a></li>
+							<li><a href="#">Korisnička podrška</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Mapa</a></li>
+							<li><a href="#">Narudžbe &amp; Povratak</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3>Moj račun</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Prijavite se</a></li>
+							<li><a href="#">Pogledaj košaricu</a></li>
+							<li><a href="#">Popis želja</a></li>
+							<li><a href="#">Prati moju narudžbu</a></li>
+							<li><a href="#">Pomoć</a></li>
+						</ul>	
+					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3><span class="glyphicon glyphicon-list-alt"></span> Novosti</h3>
+						<p>Prijavite se za nove ekskluzivne ponude.</p>
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Unesite svoju e-mail adresu">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">
+									Pretplati me!
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+        <div class="small-print">
+        	<div class="container">
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; mojmedo.com 2022 </p>
+        	</div>
+        </div>
+        
+	</footer>
+
+	
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+    function changeImage1(){
+        document.getElementById("obicanmedo").src="slike/bijeli.jpg";
+    }
+    function changeImage2(){
+        document.getElementById("obicanmedo").src="slike/crveni.jpg";
+    }
+    function changeImage3(){
+        document.getElementById("obicanmedo").src="slike/babyblue.jpg";
+    }
+    function changeImage4(){
+        document.getElementById("obicanmedo").src="slike/cyan.jpg";
+    }
+    function changeImage5(){
+        document.getElementById("obicanmedo").src="slike/ljubicasti.jpg";
+    }
+    function changeImage6(){
+        document.getElementById("obicanmedo").src="slike/rose.jpg";
+    }
+    function changeImage7(){
+        document.getElementById("obicanmedo").src="slike/rozi.jpg";
+    }
+    function changeImage8(){
+        document.getElementById("obicanmedo").src="slike/sareni.jpg";
+    }
+    function changeImage9(){
+        document.getElementById("obicanmedo").src="slike/tamnorozi.jpg";
+    }
+    function changeImage10(){
+        document.getElementById("obicanmedo").src="slike/zuti.jpg";
+    }
+    function changeImage11(){
+        document.getElementById("obicanmedo").src="slike/mint.jpg";
+    }
+    function changeImage12(){
+        document.getElementById("obicanmedo").src="slike/lavanda.jpg";
+    }
+    function  changeImageReset(){
+        document.getElementById("obicanmedo").src="slike/obican.jpg";
+    }
+    function  changeImageRandom(){
+        let images =['slike/alien.png','slike/exclusive.png','slike/fairy.png','slike/frozen.png','slike/withTag.png','slike/drstrange.jpg','slike/elvis.jpg']
+        let random = Math.floor(Math.random() * 7); 
+        document.getElementById("obicanmedo").src=images[random];
+    }
+   
+</script>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Moj Medo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                	<img src="slike/logo.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Početna</a>
+                    </li>
+                    <li>
+                        <a href="customize.html">Izrada plišanaca</a>
+                    </li>
+					<li>
+                        <a href="QRAplikacija.html">QR Aplikacija</a>
+                    </li>
+                    <li>
+                        <a href="financije.html">Cjenik</a>
+                    </li>
+					<li>
+                        <a href="zajednica.html">Zajednica</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Košarica</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<div class="jumbotron feature">
+		<div class="container">
+			<div class="prvitekst">
+				<p>
+					Više od 1000 mogućih dizajna!<br>
+					Kreiraj svog medvjedića po želji.<br>
+					<a href="customize.html" class="animated-button1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Kreiraj!
+					</a>
+				</p>
+			</div>
+			<div class="medvjedici">
+				<img src="" id="image">
+
+				<script type="text/javascript">
+					let image = document.getElementById('image');
+					let images =['slike/alien.png','slike/exclusive.png','slike/fairy.png','slike/frozen.png','slike/withTag.png']
+					setInterval(function(){
+						let random = Math.floor(Math.random() * 5); 
+						image.src=images[random];
+					}, 1000);
+			
+				</script>
+			</div>
+		</div>
+	</div>
+	<br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center">O nama</h1>
+                <p style="text-align: justify;"class="lead text-center">Naša kompanija se bavi izradom vlastitih plišanih medvjedića. 
+					Naš je cilj povezati ih sa virtualnim svijetom u kojem je samo mašta granica.	Svi članovi poduzeća „MojMedo“ imaju iskustva sa programiranjem i razvojem aplikacija. 
+					Sa svojim zajedničkim znanjima i iskustvima stvaraju poduzeće sa ciljem dovođenja tehnologije u svijet plišanih igračaka.</p>
+					<br><br>
+			</div>
+        </div>
+    </div>
+
+	
+		
+	<footer>
+	
+		<h1 class="text-center">Pronađite nas</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.933050069242!2d15.991821599999996!3d45.8125992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7acabbf7971%3A0xd7f30b40ef4e4588!2sMarti%C4%87eva%20ul.%2056%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1654615647734!5m2!1shr!2shr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 footer-info-item text-center">
+						<p class="lead">
+							Martićeva ul. 56, Zagreb Hrvatska
+						</p>
+						<h2>Kontaktirajte nas</h2>
+						<p class="lead"><span class="glyphicon glyphicon-phone-alt"></span> +3851 123 3456<br>
+						mojmedo@gmail.com</p>
+					</div>
+				</div>
+			</div>
+
+		<div class="footer-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-info-item">
+						<h3>Informacije</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">O nama</a></li>
+							<li><a href="#">Korisnička podrška</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Mapa</a></li>
+							<li><a href="#">Narudžbe &amp; Povratak</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3>My Account</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Prijavite se</a></li>
+							<li><a href="#">Pogledaj košaricu</a></li>
+							<li><a href="#">Popis želja</a></li>
+							<li><a href="#">Prati moju narudžbu</a></li>
+							<li><a href="#">Pomoć</a></li>
+						</ul>	
+					</div>
+					<div class="col-sm-4 footer-info-item">
+						<h3><span class="glyphicon glyphicon-list-alt"></span> Novosti</h3>
+						<p>Prijavite se za nove ekskluzivne ponude.</p>
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Unesite svoju e-mail adresu">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">
+									Pretplati me!
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+        <div class="small-print">
+        	<div class="container">
+        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        		<p>Copyright &copy; mojmedo.com 2022 </p>
+        	</div>
+        </div>
+        
+	</footer>
+
+	
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+</body>
+
+</html>
